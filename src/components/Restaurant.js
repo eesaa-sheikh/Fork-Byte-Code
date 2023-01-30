@@ -16,6 +16,9 @@ const Restaurant = ({restaurant}) => {
                     <div key={id}>
                         <p>{review.user.name}</p>
                         <p>{review.reviewText}</p>
+                        <p>{review.rating}</p>
+                        <p>{review.date}</p>
+                        <hr/>
                     </div>
 
 
