@@ -6,6 +6,7 @@ const RestaurantContainer = () => {
 
     const[restaurants,setRestaurants] = useState([]);
 
+
     useEffect(() => {
         fetch (`${SERVER_URL}`)
         .then((response) => response.json())
@@ -13,6 +14,12 @@ const RestaurantContainer = () => {
 
     },[])
 
+    const [restaurantReviews, setRestaurantReviews] = useState([]);
+
+    const restaurantReviewList = (review) => {
+        setRestaurantReviews([...restaurantReviews, review])
+    }
+    console.log(setRestaurantReviews)
 
 
 
@@ -21,6 +28,7 @@ const RestaurantContainer = () => {
         <>
         <RestaurantList
         restaurants ={restaurants}
+        restaurantReviewList = {restaurantReviewList}
         />
         <h1>Hello Food Reviews</h1>
         </>

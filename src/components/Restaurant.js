@@ -10,7 +10,27 @@ const Restaurant = ({restaurant}) => {
             <h2>{restaurant.closingHour}</h2>
             <h2>{restaurant.website}</h2>
             <h2>{restaurant.averageRating}</h2>
-            
+
+            {restaurant.reviews.map((review, id) => {
+                return (
+                    <div key={id}>
+                        <p>{review.user.name}</p>
+                        <p>{review.reviewText}</p>
+                    </div>
+
+
+                )
+                        
+            }
+
+            )}
+
+
+            {/* <h1>{restaurant.reviews[0].reviewText}</h1>
+            <h1>{restaurant.reviews[1].reviewText}</h1>
+            <h1>{restaurant.reviews[2].reviewText}</h1>
+            <h1>{restaurant.reviews[3].reviewText}</h1> */}
+
 
 
 
