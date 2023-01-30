@@ -2,28 +2,24 @@ import { useState, useEffect } from "react";
 
 const SERVER_URL = "http://localhost:8080/foodplace"
 
-const SearchBarForm = () => {
+const SearchBarForm = ({filterRestaurants}) => {
 
     const [userInputs, setUserInputs] = useState("");
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
-        let userInput = event.target.value;
-        console.log("button has been clicked")
-
-        
+        filterRestaurants(userInputs)
     }
-
-    useEffect(() => {
-        fetch (`${SERVER_URL}/foodtype?foodType=`)
-    })
-
 
 
 
     return (
         <form onSubmit={handleFormSubmit}>
-        <input type="text" placeholder="Enter Food Type"/>
+        <input 
+        type="text" 
+        placeholder="Enter Food Type" 
+        onChange={event => setUserInputs(event.target.value)}
+        value={userInputs}/>
         <button type="submit"> Submit </button>
         </form>
     )

@@ -14,10 +14,10 @@ const Restaurant = ({restaurant}) => {
             {restaurant.reviews.map((review, id) => {
                 return (
                     <div key={id}>
-                        <p>{review.user.name}</p>
-                        <p>{review.reviewText}</p>
-                        <p>{review.rating}</p>
-                        <p>{review.date}</p>
+                        <p>Name: {review.user.name}</p>
+                        <p>Review: {review.reviewText}</p>
+                        <p>Rating: {review.rating}</p>
+                        <p>Date: {review.date}</p>
                         <hr/>
                     </div>
 
