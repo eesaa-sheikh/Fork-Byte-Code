@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-
+import RestaurantContainer from './containers/RestaurantContainer';
 function App() {
   return (
-    <h1>Hello foodies!</h1>
+    <RestaurantContainer/>
   );
 }
 
