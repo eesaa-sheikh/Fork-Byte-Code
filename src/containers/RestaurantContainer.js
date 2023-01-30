@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import RestaurantList from "../components/RestaurantList";
+import SearchBarForm from "../components/SearchBarForm";
+
 const SERVER_URL = "http://localhost:8080/foodplace"
 
 const RestaurantContainer = () => {
@@ -14,22 +16,16 @@ const RestaurantContainer = () => {
 
     },[])
 
-    const [restaurantReviews, setRestaurantReviews] = useState([]);
-
-    const restaurantReviewList = (review) => {
-        setRestaurantReviews([...restaurantReviews, review])
-    }
-    console.log(setRestaurantReviews)
 
 
 
 
     return (
         <>
+        <SearchBarForm/>
         <RestaurantList
-        restaurants ={restaurants}
-        restaurantReviewList = {restaurantReviewList}
-        />
+        restaurants ={restaurants}/>
+        
         <h1>Hello Food Reviews</h1>
         </>
     )
