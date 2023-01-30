@@ -14,14 +14,18 @@ const SearchBarForm = ({filterRestaurants}) => {
 
 
     return (
+        <>
         <form onSubmit={handleFormSubmit}>
         <input 
-        type="text" 
+        type="search" 
         placeholder="Enter Food Type" 
         onChange={event => setUserInputs(event.target.value)}
         value={userInputs}/>
-        <button type="submit"> Submit </button>
+        <button  type="submit"
+                value="submit"> 
+                Submit </button>
         </form>
+        </>
     )
 }
 

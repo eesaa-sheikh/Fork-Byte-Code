@@ -19,8 +19,10 @@ const RestaurantContainer = () => {
     const [filteredRestaurants, setFilteredRestaurants] = useState([])
 
     const filterRestaurants = (searchTerm) => {
-        fetch (`${SERVER_URL}/foodtype?foodType=${searchTerm}`)
+        const foundRestaurants = fetch (`${SERVER_URL}/foodtype?foodType=${searchTerm}`)
+        setFilteredRestaurants(foundRestaurants)
     }
+    
 
 
 
@@ -28,11 +30,14 @@ const RestaurantContainer = () => {
 
     return (
         <>
-        <SearchBarForm restaurants = {restaurants}/>
+        <SearchBarForm 
+            restaurants={restaurants} 
+            filterRestaurants={filterRestaurants}
+        />
         <RestaurantList
-        restaurants ={restaurants}/>
+        restaurants = {restaurants}
+        />
         
-        <h1>Hello Food Reviews</h1>
         </>
     )
 }
