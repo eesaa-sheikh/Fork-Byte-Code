@@ -3,6 +3,8 @@ import Restaurant from "../components/Restaurant";
 import RestaurantList from "../components/RestaurantList";
 import SearchBarForm from "../components/SearchBarForm";
 import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
+
+
 const SERVER_URL = "http://localhost:8080/foodplace"
 
 
@@ -22,6 +24,7 @@ const RestaurantContainer = () => {
 
     return (
         <>
+  
         <BrowserRouter>
             <li>
                 <Link to="/RestaurantList"> Restaurant Directory</Link>
