@@ -4,10 +4,13 @@ const SearchBarForm = ({search}) => {
 
 
  return (
-        <form onChange={search} value ={search}>
-        <input type="text" placeholder="Enter Food Type"/>
-        <button type="submit"> Submit </button>
-        </form>
+        // <form onChange={search} value ={search}>
+        // <input type="text" placeholder="Enter Food Type"/>
+        // <button type="submit"> Submit </button>
+        // </form>
+
+        <>
+        </>
     )
 
 }
