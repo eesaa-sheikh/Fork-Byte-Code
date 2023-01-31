@@ -1,7 +1,3 @@
-import noodleGirl from './imageJar/NoodleSoup.png'
-import chef from './imageJar/chef.png'
-import noodleFood from './imageJar/food.png'
-
 import {useState} from "react";
 
 import Carousel from 'react-bootstrap/Carousel';
@@ -9,13 +5,13 @@ import Carousel from 'react-bootstrap/Carousel';
     const data = [
 
         {
-            image: require('./imageJar/NoodleSoup.png')
+            image: require('./imageJar/AmigosBurger.jpeg')
         },
         {
-            image: require('./imageJar/chef.png') 
+            image: require('./imageJar/tsujiri5.jpeg') 
         },
         {
-            image: require('./imageJar/food.png')
+            image: require('./imageJar/chinchin2.jpeg')
         }
     ]
 
