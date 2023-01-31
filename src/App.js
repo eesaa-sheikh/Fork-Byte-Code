@@ -6,9 +6,9 @@ import ContactUs from './components/ContactUs';
 function App() {
   return (
     <>
-     
+     <RestaurantContainer />
       <BrowserRouter>
-      <RestaurantContainer />
+      
       <footer >
         <h4> About Best Byte</h4>
         <li><Link to="/ContactUs">Contact us</Link></li>
@@ -18,6 +18,7 @@ function App() {
       <Routes> 
 
         <Route path='/ContactUs' element={<ContactUs/>}/> 
+        
 
       </Routes>
 
