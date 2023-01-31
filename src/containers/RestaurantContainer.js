@@ -23,22 +23,9 @@ const RestaurantContainer = () => {
     return (
         <>
  
-        <BrowserRouter>
-            <li>
-                <Link to="/RestaurantList"> Restaurant Directory</Link>
-            </li>
-            <Routes>
-                <Route path = "/RestaurantList" 
-                    element = {
+
                     <RestaurantList
                     restaurants ={restaurants}/>
-                }/>
-            </Routes>
-        
-        
-        </BrowserRouter>
-
-        
         
         </>
     )

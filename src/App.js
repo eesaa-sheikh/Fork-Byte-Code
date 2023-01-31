@@ -10,10 +10,10 @@ function App() {
   return (
     <>
      
-     <RestaurantContainer />
       <BrowserRouter>
       <nav>
         <li><Link to="/Home">Home Page</Link> </li>
+        <li><Link to="/RestaurantContainer"> Restaurant Directory</Link></li>
       </nav>
 
       <Routes> 
@@ -21,6 +21,7 @@ function App() {
         <Route path='/WhoWeAre' element={<WhoWeAre/>}/> 
         <Route path='/OurMission' element={<OurMission/>}/>
         <Route path='/Home' element={<Home/>}/>
+        <Route path="/RestaurantContainer" element={<RestaurantContainer/>}/>
       </Routes>
         <footer >
             <h4> About Best Byte</h4>
