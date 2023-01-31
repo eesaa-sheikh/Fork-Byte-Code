@@ -5,13 +5,15 @@ import ContactUs from './components/ContactUs';
 import WhoWeAre from './components/WhoWeAre';
 import OurMission from './components/OurMission';
 import Home from './components/Home';
+import logo from './bestbyteNoBG.png'
 
 function App() {
   return (
     <>
      
       <BrowserRouter>
-      <nav>
+      <nav className='NavBar'>
+        <img src={logo}alt='logo of bestByte'width={50}/>
         <li><Link to="/Home">Home Page</Link> </li>
         <li><Link to="/RestaurantContainer"> Restaurant Directory</Link></li>
       </nav>
