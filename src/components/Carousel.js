@@ -5,13 +5,19 @@ import Carousel from 'react-bootstrap/Carousel';
     const data = [
 
         {
-            image: require('./imageJar/AmigosBurger.jpeg')
+            image: require('./imageJar/amigos4.webp'),
+            caption: "Amigos Burgers",
+            description: "Juicy burgers"
         },
         {
-            image: require('./imageJar/tsujiri5.jpeg') 
+            image: require('./imageJar/tsujiri5.jpeg') ,
+            caption: "Tsujiri",
+            description: "Serving teasingly good matcha delicacies"
         },
         {
-            image: require('./imageJar/chinchin2.jpeg')
+            image: require('./imageJar/chinchin2.jpeg'),
+            caption: "Chin Chin Labs",
+            description: "Ice-cream like you've never seen before"
         }
     ]
 
@@ -31,13 +37,20 @@ const ImageCarousel = () => {
 
             {data.map((slide, id) => {
                 return(
+                
                     <Carousel.Item key={id}>
                         <img
                         className='image-block'
                         src={slide.image}
                         alt =" Food Images"
                         />
+                    
+                    <Carousel.Caption>
+                        <h3>{slide.caption}</h3>
+                        <p>{slide.description}</p>
+                    </Carousel.Caption>
                     </Carousel.Item>
+                
                 )
             }
             
@@ -51,8 +64,3 @@ const ImageCarousel = () => {
 }
  
 export default ImageCarousel;
-
-<>
-
-</>
-
