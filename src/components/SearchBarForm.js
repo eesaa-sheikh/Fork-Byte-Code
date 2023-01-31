@@ -1,11 +1,6 @@
-import { useState, useEffect } from "react";
-
 const SERVER_URL = "http://localhost:8080/foodplace"
 
-const SearchBarForm = ({search,setSearch}) => {
-
-    <div className='Hello'>
-    <form className='submission'>
+const SearchBarForm = ({search}) => {
 
 
  return (
@@ -14,9 +9,6 @@ const SearchBarForm = ({search,setSearch}) => {
         <button type="submit"> Submit </button>
         </form>
     )
-                     </form>
-
-    </div>
 
 }
 
