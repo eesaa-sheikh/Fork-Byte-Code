@@ -14,24 +14,27 @@ const Restaurant = ({restaurant}) => {
 
             <ReviewModal/>
 
-
             {restaurant.reviews.map((review, id) => {
 
-                return (
-                    <div key={id}>
-                        <p>Name: {review.user.name}</p>
-                        <p>Review: {review.reviewText}</p>
-                        <p>Rating: {review.rating}</p>
-                        <p>Date: {review.date}</p>
-                        <hr/>
-                    </div>
+            return (
+                <div key={id}>
+                    <p>Name: {review.user.name}</p>
+                    <p>Review: {review.reviewText}</p>
+                    <p>Rating: {review.rating}</p>
+                    <p>Date: {review.date}</p>
+                    <hr/>
+                </div>
 
 
-                )
-                        
-            }
+            )
+            
+        
+}
 
-            )}
+)}
+
+
+            
 
 
         </div>

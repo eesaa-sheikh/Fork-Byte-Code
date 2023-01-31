@@ -1,6 +1,7 @@
 import Restaurant from "./Restaurant";
 import { useEffect, useState } from "react";
 import SearchBarForm from "./SearchBarForm";
+import ReviewModal from "./ReviewModal";
 
 const RestaurantList = ({restaurants}) => {
 
@@ -19,7 +20,8 @@ const RestaurantList = ({restaurants}) => {
     return(
 
         
-<>
+    <>
+        
         <SearchBarForm
         search={searchIn}
         setSearch={handleChange}
@@ -33,17 +35,22 @@ const RestaurantList = ({restaurants}) => {
 
             {restaurants.filter(restaurants => restaurants.foodType.toLowerCase().includes(searchIn.toLowerCase())|| restaurants.name.toLowerCase().includes(searchIn.toLowerCase()) )
             .map(restaurants =>
-
+                
                 <Restaurant 
                 key = {restaurants.id}
                 restaurant = {restaurants}
                 />
+                
+            
                
             )}
-         
+            <ReviewModal
+            key= {restaurants.id}
+            restaurant = {restaurants}
+            />
         </div>
     
-</>
+    </>
 
     )
 
