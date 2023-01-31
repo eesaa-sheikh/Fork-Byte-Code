@@ -34,17 +34,19 @@ const ReviewModal = ({restaurant}) => {
                 aria-describedby="modal-modal-description"
             > 
                 <Box sx={style}>
-                    <Typography id="modal-modal-title" 
-                                variant="h6" 
-                                component="h2"
-                                >
-                                    Review Goes Here
-                    </Typography>
-                    <Typography id="modal-modal-description"
-                                sx={{mt:2}}
-                                >
-                                    This is description of review
-                    </Typography>
+                {restaurant.reviews.map((review, id) => {
+
+                return (
+                    <div key={id}>
+                        <p>Name: {review.user.name}</p>
+                        <p>Review: {review.reviewText}</p>
+                        <p>Rating: {review.rating}</p>
+                        <p>Date: {review.date}</p>
+                        <hr/>
+                    </div>
+
+
+                ) } )}
                 </Box>
             </Modal>
         </div>

@@ -44,10 +44,7 @@ const RestaurantList = ({restaurants}) => {
             
                
             )}
-            <ReviewModal
-            key= {restaurants.id}
-            restaurant = {restaurants}
-            />
+            
         </div>
     
     </>
