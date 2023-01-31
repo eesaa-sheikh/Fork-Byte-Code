@@ -29,15 +29,6 @@ const Restaurant = ({restaurant}) => {
             )}
 
 
-            {/* <h1>{restaurant.reviews[0].reviewText}</h1>
-            <h1>{restaurant.reviews[1].reviewText}</h1>
-            <h1>{restaurant.reviews[2].reviewText}</h1>
-            <h1>{restaurant.reviews[3].reviewText}</h1> */}
-
-
-
-
-
         </div>
      );
 }

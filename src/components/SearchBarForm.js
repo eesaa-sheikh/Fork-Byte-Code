@@ -2,31 +2,22 @@ import { useState, useEffect } from "react";
 
 const SERVER_URL = "http://localhost:8080/foodplace"
 
-const SearchBarForm = ({filterRestaurants}) => {
+const SearchBarForm = ({search,setSearch}) => {
 
-    const [userInputs, setUserInputs] = useState("");
-
-    const handleFormSubmit = (event) => {
-        event.preventDefault();
-        filterRestaurants(userInputs)
-    }
+    <div className='Hello'>
+    <form className='submission'>
 
 
-
-    return (
-        <>
-        <form onSubmit={handleFormSubmit}>
-        <input 
-        type="search" 
-        placeholder="Enter Food Type" 
-        onChange={event => setUserInputs(event.target.value)}
-        value={userInputs}/>
-        <button  type="submit"
-                value="submit"> 
-                Submit </button>
+ return (
+        <form onChange={search} value ={search}>
+        <input type="text" placeholder="Enter Food Type"/>
+        <button type="submit"> Submit </button>
         </form>
-        </>
     )
+                     </form>
+
+    </div>
+
 }
 
 export default SearchBarForm;
