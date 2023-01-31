@@ -1,3 +1,4 @@
+import ReviewModal from "./ReviewModal";
 
 const Restaurant = ({restaurant}) => {
     return ( 
@@ -11,22 +12,12 @@ const Restaurant = ({restaurant}) => {
             <h2>{restaurant.website}</h2>
             <h2>{restaurant.averageRating}</h2>
 
-            {restaurant.reviews.map((review, id) => {
-                return (
-                    <div key={id}>
-                        <p>Name: {review.user.name}</p>
-                        <p>Review: {review.reviewText}</p>
-                        <p>Rating: {review.rating}</p>
-                        <p>Date: {review.date}</p>
-                        <hr/>
-                    </div>
+            <ReviewModal restaurant={restaurant}/>
 
 
-                )
-                        
-            }
 
-            )}
+
+            
 
 
         </div>
