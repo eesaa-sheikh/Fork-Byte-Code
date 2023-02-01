@@ -20,8 +20,6 @@ Yellow red: #FFBD59
 .navbar {
   background-color: #FFDE5B;
   height: 110px;
-  margin-bottom: 25px;
-  
 }
 
 .navbar--ul, .nav--link, li{
@@ -29,6 +27,7 @@ Yellow red: #FFBD59
   text-decoration: none;
   list-style: none;
   display: flex;
+  color: #164684;
 }
 
 .nav--link {
@@ -41,8 +40,6 @@ Yellow red: #FFBD59
   background-color: #FFDE5B;
 }
 
-
-
 .footer {
   background-color: #FFDE5B;
   padding-bottom: 0px;
@@ -52,11 +49,7 @@ Yellow red: #FFBD59
   bottom: 0;
   width: 100%;
   height: 10rem;
- 
-
 }
-
-
 
 .footer--ul li, .link, h4 {
   text-decoration: none;
@@ -73,23 +66,17 @@ Yellow red: #FFBD59
 }
 
 .restaurantContainer{
-
   display:grid;
   grid-template-columns: repeat(2,1fr);
   border-width: 5px;
   margin: 20px;
   grid-gap: 30px;
- 
-
-
 }
 
 .restaurantCard{
 
   background: rgb(255,140,140);
   background: linear-gradient(360deg, rgba(255,140,140,1) 0%, rgba(254,197,197,1) 72%);
-
-
  border-radius: 10px;
  padding: 20px;
  /* border: 5px solid #FFBD59; */
@@ -99,7 +86,6 @@ Yellow red: #FFBD59
 }
 
 #input-bar{
-
   border-radius: 10px;
   width: 400px;
   height: 100px;
@@ -116,11 +102,19 @@ box-shadow: 5px 10px 8px #2c2c2c;
 
 }
 
-
-
 .searchBar{
-
+padding-top: 25px;
 display:flex;
 justify-content: center;
 padding-bottom: 50px;
+}
+
+.carousel-caption{
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+  font-weight: bold;
+}
+
+.image-block{
+  width: 100%;
+  height: 600px;
 }

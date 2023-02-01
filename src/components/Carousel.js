@@ -31,7 +31,7 @@ const ImageCarousel = () => {
 
     return (  
 
-        <>
+        <div id="carousel">
 
         <Carousel activeIndex ={index} onSelect={handleSelect}>
 
@@ -45,7 +45,7 @@ const ImageCarousel = () => {
                         alt =" Food Images"
                         />
                     
-                    <Carousel.Caption>
+                    <Carousel.Caption id="carousel-caption">
                         <h3>{slide.caption}</h3>
                         <p>{slide.description}</p>
                     </Carousel.Caption>
@@ -57,7 +57,7 @@ const ImageCarousel = () => {
             )}
         </Carousel>
         
-        </>
+        </div>
 
 
     );

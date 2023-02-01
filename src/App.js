@@ -20,7 +20,7 @@ function App() {
         <img  id="logo" src={logo}alt='logo of bestByte'/>
         <ul className='navbar--ul'>
           <li><Link className="nav--link" to="/Home">Home Page</Link> </li>
-          <li><Link className="nav--link" to="/RestaurantContainer"> Restaurant Directory</Link></li>
+          <li><Link className="nav--link" to="/RestaurantContainer"> Discover Restaurants</Link></li>
         </ul>
       </nav>
 
@@ -32,7 +32,7 @@ function App() {
         <Route path="/RestaurantContainer" element={<RestaurantContainer/>}/>
       </Routes>
       <footer className='footer'>
-        <h4> About Best Byte</h4>
+        <h4> About Best Byte:</h4>
           <ul className='footer--ul'>
               <li><Link className="link" to="/ContactUs">Contact us</Link></li>
               <li><Link className="link" to="/WhoWeAre">Who we are</Link> </li>
