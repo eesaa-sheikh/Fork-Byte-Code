@@ -7,9 +7,7 @@ Yellow red: #FFBD59
 
 */
 
-
-
-* {
+#root{
   background-color: #FFF3C2;
   margin: 0;
   padding: 0;
@@ -41,9 +39,7 @@ Yellow red: #FFBD59
   background-color: #FFDE5B;
 }
 
-.footer-container {
-  background-color: #FFDE5B;
-}
+
 
 .footer {
   background-color: #FFDE5B;
@@ -52,19 +48,26 @@ Yellow red: #FFBD59
   display: flex;
 }
 
+
+
 .footer--ul li, .link, h4 {
   text-decoration: none;
   color: #164684;
   list-style: none;
-  background-color: #FFDE5B;
   margin: 0em 0em 0em 0em;
   padding: 0px 0px 0px 0px;
   
 }
 
 .social-media-logo {
-  background-color: #FFDE5B;
   width: 48px;
   height: 48px;
 }
 
+.restaurantCard{
+
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  border-width: 5px;
+
+}

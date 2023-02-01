@@ -32,7 +32,7 @@ const RestaurantList = ({restaurants}) => {
         placeholder="search your food type"
         onChange={handleChange}/>
 
-
+        <div className="restaurantCard">
             {restaurants.filter(restaurants => restaurants.foodType.toLowerCase().includes(searchIn.toLowerCase())|| restaurants.name.toLowerCase().includes(searchIn.toLowerCase()) )
             .map(restaurants =>
                 
@@ -40,10 +40,12 @@ const RestaurantList = ({restaurants}) => {
                 key = {restaurants.id}
                 restaurant = {restaurants}
                 />
-                
+                  
             
                
             )}
+
+</div>
             
         </div>
     
