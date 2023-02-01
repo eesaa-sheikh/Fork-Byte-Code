@@ -5,17 +5,23 @@ import ContactUs from './components/ContactUs';
 import WhoWeAre from './components/WhoWeAre';
 import OurMission from './components/OurMission';
 import Home from './components/Home';
-import logo from './bestbyteNoBG.png'
+import logo from './bestbyteNoBG.png';
+import instagram from './instagram.png';
+import facebook from './facebook.png'
+import twitter from './twitter.png'
+
 
 function App() {
   return (
     <>
      
       <BrowserRouter>
-      <nav className='NavBar'>
-        <img src={logo}alt='logo of bestByte'width={50}/>
-        <li><Link to="/Home">Home Page</Link> </li>
-        <li><Link to="/RestaurantContainer"> Restaurant Directory</Link></li>
+      <nav className='navbar'>
+        <img  id="logo" src={logo}alt='logo of bestByte'/>
+        <ul className='navbar--ul'>
+          <li><Link className="nav--link" to="/Home">Home Page</Link> </li>
+          <li><Link className="nav--link" to="/RestaurantContainer"> Restaurant Directory</Link></li>
+        </ul>
       </nav>
 
       <Routes> 
@@ -25,11 +31,17 @@ function App() {
         <Route path='/Home' element={<Home/>}/>
         <Route path="/RestaurantContainer" element={<RestaurantContainer/>}/>
       </Routes>
-        <footer >
-            <h4> About Best Byte</h4>
-            <li><Link to="/ContactUs">Contact us</Link></li>
-            <li><Link to="/WhoWeAre">Who we are</Link> </li>
-            <li><Link to="/OurMission">Our mission</Link></li>
+      <footer className='footer'>
+        <h4> About Best Byte</h4>
+          <ul className='footer--ul'>
+              <li><Link className="link" to="/ContactUs">Contact us</Link></li>
+              <li><Link className="link" to="/WhoWeAre">Who we are</Link> </li>
+              <li><Link className="link" to="/OurMission">Our mission</Link></li>
+          </ul>  
+          <img src={instagram} alt="instagram logo" className='social-media-logo'/>
+          <img src={facebook} alt="facebook logo" className='social-media-logo'/>
+          <img src={twitter} alt="twitter logo" className='social-media-logo'/>
+
         </footer>
        </BrowserRouter>
     </>
