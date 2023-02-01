@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 
 const style = {
@@ -10,10 +9,12 @@ const style = {
     left: "50%",
     transform: "translate(-50%, -50%)",
     width: 400,
-    bgcolor: "background.paper",
-    border: "2px solid #000",
+    bgcolor: "#FF8C8C",
+    // border: "2px solid ",
     boxShadow: 24,
     p: 4,
+    borderRadius: 3,
+    font: "ReceiptFont"
 }
 
 const ReviewModal = ({restaurant}) => {
@@ -28,12 +29,13 @@ const ReviewModal = ({restaurant}) => {
         <div>
             <Button onClick={handleOpen}> Show reviews </Button>
             <Modal 
+                
                 open={open}
                 onClose={handleClose}
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
             > 
-                <Box sx={style}>
+                <Box id="modal-box" sx={style}>
                 {restaurant.reviews.map((review, id) => {
 
                 return (

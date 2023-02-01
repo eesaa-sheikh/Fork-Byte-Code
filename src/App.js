@@ -32,16 +32,20 @@ function App() {
         <Route path="/RestaurantContainer" element={<RestaurantContainer/>}/>
       </Routes>
       <footer className='footer'>
+        <div className='footer-leftside'>
         <h4> About Best Byte:</h4>
           <ul className='footer--ul'>
               <li><Link className="link" to="/ContactUs">Contact us</Link></li>
               <li><Link className="link" to="/WhoWeAre">Who we are</Link> </li>
               <li><Link className="link" to="/OurMission">Our mission</Link></li>
-          </ul>  
+          </ul> 
+          </div> 
+
+          <div className='footer-rightside'>
           <img src={instagram} alt="instagram logo" className='social-media-logo'/>
           <img src={facebook} alt="facebook logo" className='social-media-logo'/>
           <img src={twitter} alt="twitter logo" className='social-media-logo'/>
-
+          </div>
         </footer>
        </BrowserRouter>
     </>
