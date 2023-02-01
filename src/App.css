@@ -25,7 +25,7 @@ main{
 
 .navbar {
   background-color: #FFDE5B;
-  height: 110px;
+  height: 15vh;
 }
 
 .navbar--ul, .nav--link, li{
@@ -39,10 +39,10 @@ main{
 .nav--link {
   padding: 20px;
   font-weight: bold;
+  font-size: x-large;
 }
-
 #logo {
-  width: 100px;
+  width: 140px;
   background-color: #FFDE5B;
 }
 
@@ -79,6 +79,21 @@ main{
   margin: 20px;
   grid-gap: 30px;
 }
+
+.restaurantCard:hover{
+
+  background-color: #FBAB7E;
+  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  
+ border-radius: 10px;
+ padding: 20px;
+
+}
+
+
+
+
+
 
 .restaurantCard{
 
@@ -123,7 +138,7 @@ padding-bottom: 50px;
 
 .image-block{
   width: 100%;
-  height: 600px;
+  height: 75vh;
 }
 
 .info{

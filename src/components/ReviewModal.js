@@ -2,6 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
+import Restaurant from './Restaurant';
 
 const style = {
     position: "absolute",
@@ -21,7 +22,7 @@ const style = {
     
 }
 
-const ReviewModal = ({reviews}) => {
+const ReviewModal = ({reviews,restaurant}) => {
 
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
@@ -43,13 +44,20 @@ const ReviewModal = ({reviews}) => {
                 {reviews.map((review, id) => {
 
                 return (
+
+                    <div>
+                        <h2>{restaurant.name}</h2>
+
                     <div key={id}>
+                        
                         <p>Name: {review.user.name}</p>
                         <p>Review: {review.reviewText}</p>
                         <p>Rating: {review.rating}</p>
                         <p>Date: {review.date}</p>
                         <hr/>
                     </div>
+                    </div>
+                    
 
 
                 ) } )}

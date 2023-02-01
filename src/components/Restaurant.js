@@ -17,7 +17,8 @@ const Restaurant = ({restaurant}) => {
             <h2>{restaurant.website}</h2>
             <h2>Rating: {restaurant.averageRating}</h2>
 
-            <ReviewModal reviews={reviews}/>
+            <ReviewModal reviews={reviews}
+            restaurant={restaurant}/>
             <AddReviewModal restaurant={restaurant}
             reviews={reviews} 
             setReviews={setReviews}/>
