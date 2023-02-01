@@ -1,3 +1,4 @@
+import AddReviewModal from "./AddReviewModal";
 import ReviewModal from "./ReviewModal";
 
 const Restaurant = ({restaurant}) => {
@@ -13,6 +14,7 @@ const Restaurant = ({restaurant}) => {
             <h2>Rating: {restaurant.averageRating}</h2>
 
             <ReviewModal restaurant={restaurant}/>
+            <AddReviewModal restarurant={restaurant}/>
 
         </div>
      );

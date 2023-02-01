@@ -21,17 +21,16 @@ const style = {
     
 }
 
-const ReviewModal = ({restaurant}) => {
-
+const AddReviewModal = ({restaurant}) => {
+    
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
-
     
-
+    
     return ( 
         <div>
-            <Button onClick={handleOpen}> Show reviews </Button>
+            <Button onClick={handleOpen}> Add Review </Button>
             <Modal 
                 
                 open={open}
@@ -40,23 +39,11 @@ const ReviewModal = ({restaurant}) => {
                 aria-describedby="modal-modal-description"
             > 
                 <Box id="modal-box" sx={style}>
-                {restaurant.reviews.map((review, id) => {
-
-                return (
-                    <div key={id}>
-                        <p>Name: {review.user.name}</p>
-                        <p>Review: {review.reviewText}</p>
-                        <p>Rating: {review.rating}</p>
-                        <p>Date: {review.date}</p>
-                        <hr/>
-                    </div>
-
-
-                ) } )}
+                
                 </Box>
             </Modal>
         </div>
-    );
+     );
 }
  
-export default ReviewModal;
+export default AddReviewModal;
