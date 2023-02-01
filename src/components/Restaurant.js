@@ -3,7 +3,7 @@ import ReviewModal from "./ReviewModal";
 const Restaurant = ({restaurant}) => {
     return ( 
 
-        <div className="restaurant">
+        <div className="restaurantCard">
 
             <h1> {restaurant.name}</h1>
             <h2>{restaurant.foodType}</h2>

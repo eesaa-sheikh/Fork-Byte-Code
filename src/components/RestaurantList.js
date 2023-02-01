@@ -22,17 +22,20 @@ const RestaurantList = ({restaurants}) => {
         
     <>
         
+        <div className="searchBar">
         <SearchBarForm
         search={searchIn}
         setSearch={handleChange}
         />
-
-        <div>
+       
+        
         <input type="text" 
-        placeholder="search your food type"
+        id="input-bar"
+        placeholder="Search"
         onChange={handleChange}/>
+        </div>
 
-        <div className="restaurantCard">
+        <div className="restaurantContainer">
             {restaurants.filter(restaurants => restaurants.foodType.toLowerCase().includes(searchIn.toLowerCase())|| restaurants.name.toLowerCase().includes(searchIn.toLowerCase()) )
             .map(restaurants =>
                 
@@ -45,9 +48,8 @@ const RestaurantList = ({restaurants}) => {
                
             )}
 
-</div>
-            
         </div>
+            
     
     </>
 
