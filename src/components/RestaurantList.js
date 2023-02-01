@@ -1,6 +1,5 @@
 import Restaurant from "./Restaurant";
 import { useEffect, useState } from "react";
-import SearchBarForm from "./SearchBarForm";
 import ReviewModal from "./ReviewModal";
 
 const RestaurantList = ({restaurants}) => {
@@ -17,17 +16,19 @@ const RestaurantList = ({restaurants}) => {
 
     }
 
+
+    const search={searchIn}
+   const setSearch={handleChange}
+    
+
     return(
 
         
     <>
         
         <div className="searchBar">
-        <SearchBarForm
-        search={searchIn}
-        setSearch={handleChange}
-        />
        
+   
         
         <input type="text" 
         id="input-bar"
@@ -48,7 +49,7 @@ const RestaurantList = ({restaurants}) => {
                
             )}
 
-        </div>
+</div>
             
     
     </>
