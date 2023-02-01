@@ -2,6 +2,8 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
+import { flexbox } from '@mui/system';
+import { autocompleteClasses } from '@mui/material';
 
 const style = {
     position: "absolute",
@@ -14,7 +16,11 @@ const style = {
     boxShadow: 24,
     p: 4,
     borderRadius: 3,
-    font: "ReceiptFont"
+    font: "ReceiptFont",
+    height: "50vh",
+    overflowY: "scroll",
+    
+    
 }
 
 const ReviewModal = ({restaurant}) => {
