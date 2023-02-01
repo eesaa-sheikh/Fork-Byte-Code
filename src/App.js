@@ -24,13 +24,18 @@ function App() {
         </ul>
       </nav>
 
+      <main>
+        
+      
       <Routes> 
         <Route path='/ContactUs' element={<ContactUs/>}/> 
         <Route path='/WhoWeAre' element={<WhoWeAre/>}/> 
         <Route path='/OurMission' element={<OurMission/>}/>
         <Route path='/Home' element={<Home/>}/>
         <Route path="/RestaurantContainer" element={<RestaurantContainer/>}/>
+
       </Routes>
+      </main>
       <footer className='footer'>
         <div className='footer-leftside'>
         <h4> About Best Byte:</h4>

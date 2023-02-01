@@ -1,7 +1,11 @@
+import { useState } from "react";
 import AddReviewModal from "./AddReviewModal";
 import ReviewModal from "./ReviewModal";
 
 const Restaurant = ({restaurant}) => {
+
+    const [reviews,setReviews] = useState(restaurant.reviews);
+
     return ( 
 
         <div className="restaurantCard">
@@ -13,8 +17,10 @@ const Restaurant = ({restaurant}) => {
             <h2>{restaurant.website}</h2>
             <h2>Rating: {restaurant.averageRating}</h2>
 
-            <ReviewModal restaurant={restaurant}/>
-            <AddReviewModal restarurant={restaurant}/>
+            <ReviewModal reviews={reviews}/>
+            <AddReviewModal restaurant={restaurant}
+            reviews={reviews} 
+            setReviews={setReviews}/>
 
         </div>
      );

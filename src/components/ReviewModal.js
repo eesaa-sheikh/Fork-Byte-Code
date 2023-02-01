@@ -21,7 +21,7 @@ const style = {
     
 }
 
-const ReviewModal = ({restaurant}) => {
+const ReviewModal = ({reviews}) => {
 
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
@@ -40,7 +40,7 @@ const ReviewModal = ({restaurant}) => {
                 aria-describedby="modal-modal-description"
             > 
                 <Box id="modal-box" sx={style}>
-                {restaurant.reviews.map((review, id) => {
+                {reviews.map((review, id) => {
 
                 return (
                     <div key={id}>

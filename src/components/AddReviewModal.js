@@ -2,6 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
+import ReviewForm from './ReviewForm';
 
 const style = {
     position: "absolute",
@@ -21,7 +22,7 @@ const style = {
     
 }
 
-const AddReviewModal = ({restaurant}) => {
+const AddReviewModal = ({restaurant, reviews,setReviews}) => {
     
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
@@ -39,6 +40,11 @@ const AddReviewModal = ({restaurant}) => {
                 aria-describedby="modal-modal-description"
             > 
                 <Box id="modal-box" sx={style}>
+                <ReviewForm
+                restaurant={restaurant}
+                reviews ={reviews}
+                setReviews={setReviews}
+                />
                 
                 </Box>
             </Modal>

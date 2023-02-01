@@ -19,7 +19,9 @@ Yellow red: #FFBD59
   min-height: 100vh;
 }
 
-
+main{
+  min-height: 75vh;
+}
 
 .navbar {
   background-color: #FFDE5B;
