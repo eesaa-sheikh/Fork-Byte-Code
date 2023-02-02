@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Fork-Byte-Code Front-end Restaurant Food Review Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This website is dedicated to foodies wanting restaurant recommendations as well as posting reviews for them.
 
-## Available Scripts
+## Project Outline 
 
-In the project directory, you can run:
+We utilised a restaurant review API for our backend to create a react app. We also imported MUI to create a modal review feature, as well as using the bootstap framework for our carousel.
 
-### `npm start`
+////Insert tech stack images///
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# MVP 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Before starting our project, we defined our MVP as follows:
 
-### `npm test`
+- Have a home page with a navbar and footer.
+- Have search functionality to allow users to find a specific restaurant or cuisine.
+- Display restaurants as a list when searching.
+- Be able to view all restaurants from the API.
+- Be able to view all reviews from the API.
+- Basic CSS styling.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+#Extensions 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+We were able to implement the following extensions once our MVP was achieved:
+- Used MUI to create modals to show and add reviews.
+- Used Bootstrap to implement a carousel as part of our hero section of the homepage.
+- Convert restaurant from a list to its own cards using CSS.
+- Be able to add reviews to a restaurant.
+- Imported a custom font for our review 'receipt'
+- Implemented media queries to adjust various elements accordingly.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#How to use this app
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Fork and clone the back-end API: https://github.com/e-b-m/team_1_food_review
+2. In the terminal run the following command: `createdb food_review`
+3. Run the API 
+4. Fork and clone this repo.
+5. In the terminal run the following commands: 
+ `npm install
+  npm install react-router-dom@6
+  npm install react-bootstrap bootstrap
+  npm install @emotion/react
+  npm install @mui/base
+  npm install @emotion/styled`
