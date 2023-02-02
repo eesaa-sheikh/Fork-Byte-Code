@@ -77,21 +77,12 @@ main{
 
 .restaurantContainer{
   display:grid;
-  grid-template-columns: repeat(2,1fr);
-  border-width: 5px;
+  grid-template-columns: repeat(3,1fr);
   margin: 20px;
-  grid-gap: 30px;
+  grid-gap: 10vh;
 }
 
-.restaurantCard:hover{
 
-  background-color: #FBAB7E;
-  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-  
- border-radius: 10px;
- padding: 20px;
-
-}
 
 .restaurantCard{
 
@@ -102,6 +93,16 @@ main{
  /* border: 5px solid #FFBD59; */
 
  box-shadow: 5px 10px 8px #2c2c2c;
+ width: 45vh;
+
+}
+.restaurantCard:hover{
+
+  background-color: #FBAB7E;
+  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  
+ border-radius: 10px;
+ padding: 20px;
 
 }
 

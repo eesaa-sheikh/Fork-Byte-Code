@@ -51,11 +51,12 @@ const ReviewModal = ({reviews,restaurant}) => {
                         
 
                     <div key={id}>
-                        
+                        <p>Date: {review.date}</p>
                         <p>Name: {review.user.name}</p>
                         <p>Review: {review.reviewText}</p>
                         <p>Rating: {review.rating}</p>
-                        <p>Date: {review.date}</p>
+                        
+                        
                         <hr/>
                     </div>
                     </div>
