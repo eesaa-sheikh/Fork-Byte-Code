@@ -31,7 +31,7 @@ const AddReviewModal = ({restaurant, reviews,setReviews}) => {
     
     return ( 
         <div>
-            <Button onClick={handleOpen}> Add Review </Button>
+            <Button id="review-button" onClick={handleOpen}> Add Review </Button>
             <Modal 
                 
                 open={open}

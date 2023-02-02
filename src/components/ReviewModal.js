@@ -33,7 +33,7 @@ const ReviewModal = ({reviews,restaurant}) => {
 
     return ( 
         <div>
-            <Button onClick={handleOpen}> Show reviews </Button>
+            <Button  id="review-button" onClick={handleOpen}> Show reviews </Button>
             <Modal 
                 
                 open={open}

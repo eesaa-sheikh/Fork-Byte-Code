@@ -93,11 +93,6 @@ main{
 
 }
 
-
-
-
-
-
 .restaurantCard{
 
   background: rgb(255,140,140);
@@ -158,4 +153,18 @@ padding-bottom: 50px;
   padding-right: 100px;
   padding-top: 5vh;
   
+}
+
+#review-button {
+  font-size: 1.5vh;
+  color: white;
+  font-weight: bolder;
+  text-shadow: rgb(0, 0, 0) 3px 0 10px;
+
+}
+
+#review-button:hover {
+    text-decoration: underline 3px;
+    transform:scale(1.2);
+    transition: 0.1s
 }
