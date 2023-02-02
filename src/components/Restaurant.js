@@ -16,7 +16,7 @@ const Restaurant = ({restaurant}) => {
             <h2 className="restaurant-info">Opens: {restaurant.openingHour}</h2>
             <h2 className="restaurant-info">Closes: {restaurant.closingHour}</h2>
             <h2 className="restaurant-info">{restaurant.website}</h2>
-            <h2 className="restaurant-info">Rating:{Math.round(restaurant.averageRating * 10)/10}</h2>
+            <h2 className="restaurant-info">Rating: {Math.round(restaurant.averageRating * 10)/10}</h2>
             <hr/>
             
 

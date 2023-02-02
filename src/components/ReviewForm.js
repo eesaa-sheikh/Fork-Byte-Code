@@ -27,7 +27,7 @@ const ReviewForm = ({restaurant,setReviews,reviews}) => {
 
 
     const handleFormSubmit =(event)=>{
-        event.preventDefault();
+        // event.preventDefault();
         const postBody ={
             rating,
             reviewText,
