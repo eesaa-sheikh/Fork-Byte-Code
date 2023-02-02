@@ -6,9 +6,9 @@ This website is dedicated to foodies wanting restaurant recommendations as well 
 
 We utilised a restaurant review API for our backend to create a react app. We also imported MUI to create a modal review feature, as well as using the bootstap framework for our carousel.
 
-////Insert tech stack images///
+<img src= "css.png" alt="CSS logo"/>
 
-# MVP 
+## MVP 
 
 Before starting our project, we defined our MVP as follows:
 
@@ -20,7 +20,7 @@ Before starting our project, we defined our MVP as follows:
 - Basic CSS styling.
 
 
-##Extensions 
+## Extensions 
 
 We were able to implement the following extensions once our MVP was achieved:
 - Used MUI to create modals to show and add reviews.
@@ -31,19 +31,27 @@ We were able to implement the following extensions once our MVP was achieved:
 - Implemented media queries to adjust various elements accordingly.
 
 
-##How to use this app
+## How to use this app
 
 1. Fork and clone the back-end API: https://github.com/e-b-m/team_1_food_review
 2. In the terminal run the following command: `createdb food_review`
 3. Run the API 
 4. Fork and clone this repo.
 5. In the terminal run the following commands: 
+    <br/>
  `npm install`
+    <br/>
   `npm install react-router-dom@6`
+     <br>
   `npm install react-bootstrap bootstrap`
+    <br/>
  `npm install @emotion/react`
+    <br/>
   `npm install @mui/base`
+    <br/>
   `npm install @emotion/styled`
+
   6. Last command I promise! 
+  <br/>
   `npm start`
-  ###TADA!
+  ### **Tada!** 🎉
