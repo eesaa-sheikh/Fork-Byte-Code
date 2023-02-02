@@ -18,7 +18,8 @@ const style = {
     font: "ReceiptFont",
     height: "50vh",
     overflowY: "scroll",
-    
+    fontFamily: "ReceiptFont",
+    fontSize: 40
     
 }
 
@@ -41,12 +42,13 @@ const ReviewModal = ({reviews,restaurant}) => {
                 aria-describedby="modal-modal-description"
             > 
                 <Box id="modal-box" sx={style}>
+                    <h2>{restaurant.name}</h2>
                 {reviews.map((review, id) => {
 
                 return (
 
                     <div>
-                        <h2>{restaurant.name}</h2>
+                        
 
                     <div key={id}>
                         

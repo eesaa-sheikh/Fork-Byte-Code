@@ -8,7 +8,7 @@ Yellow red: #FFBD59
 */
 @font-face {
   font-family: ReceiptFont;
-  src: url(./merchant-copy-font/MerchantCopy-GOXq.ttf) format('ttf');
+  src: url(./merchant-copy-font/MerchantCopy-GOXq.ttf);
 }
 
 #root{
