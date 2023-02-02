@@ -46,9 +46,9 @@ main{
   text-decoration: underline;
 }
 #logo {
-  width: 140px;
+  width: auto;
   background-color: #FFDE5B;
-  height: 13vh;
+  height: 14vh;
 }
 
 .footer {
@@ -78,12 +78,12 @@ main{
 }
 
 .restaurantContainer{
-  display:grid;
-  grid-template-columns: repeat(3,1fr);
-  margin-bottom: 10vh;
-  grid-gap: 10vh;
-  margin-left: 100px;
-  margin-right: auto;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  align-items: center;
+
 }
 .restaurant-info{
   font-size: 20px;
@@ -95,8 +95,10 @@ main{
   border-radius: 10px;
   padding: 15px;
   box-shadow: 5px 10px 8px #2c2c2c;
-  width: 45vh;
+  width: 30%;
+  margin: 1vh auto 1vh auto;
   text-align: center;
+  
 }
 
 .restaurantCard:hover{
@@ -160,10 +162,9 @@ box-shadow: 5px 10px 8px #2c2c2c;
 .searchBar{
 padding-top: 25px;
 display:flex;
-justify-content: space-between;
+justify-content: space-around;
 padding-bottom: 50px;
-margin-right: 78.5vh;
-margin-left: 30vh;
+
 }
 
 #search-bar-title{
@@ -171,7 +172,7 @@ margin-left: 30vh;
   font-style: italic;
   color:white;
   text-shadow: #f7285c 1px -1px 15px;
-  
+ 
 }
 
 
@@ -219,4 +220,13 @@ margin-left: 30vh;
 
 #receipt-title {
   font-size: 5vh;
+}
+
+@media screen and (max-width: 950px){
+  .restaurantContainer{
+    flex-direction: column;
+  }
+  .restaurantCard{
+    width: 66%;
+  }
 }
