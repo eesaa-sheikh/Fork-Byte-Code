@@ -47,9 +47,9 @@ function App() {
           </div> 
 
           <div className='footer-rightside'>
-          <img src={instagram} alt="instagram logo" className='social-media-logo'/>
-          <img src={facebook} alt="facebook logo" className='social-media-logo'/>
-          <img src={twitter} alt="twitter logo" className='social-media-logo'/>
+            <img src={instagram} alt="instagram logo" className='social-media-logo'/>
+            <img src={facebook} alt="facebook logo" className='social-media-logo'/>
+            <img src={twitter} alt="twitter logo" className='social-media-logo'/>
           </div>
         </footer>
        </BrowserRouter>

@@ -44,6 +44,7 @@ main{
 #logo {
   width: 140px;
   background-color: #FFDE5B;
+  height: 13vh;
 }
 
 .footer {
@@ -68,8 +69,10 @@ main{
 }
 
 .social-media-logo {
-  width: 48px;
-  height: 48px;
+  width: 7vh;
+  height: 7vh;
+  margin-right: 12vh;
+  
 }
 
 .restaurantContainer{
@@ -147,11 +150,12 @@ padding-bottom: 50px;
 }
 
 .footer-leftside{
-  padding-left: 20px;
-  padding-top: 10px;
+  padding-left: 10vh;
+  padding-top: 3vh;
 }
 
 .footer-rightside {
   padding-right: 100px;
-  padding-top: 20px;
+  padding-top: 5vh;
+  
 }
