@@ -41,6 +41,10 @@ main{
   font-weight: bold;
   font-size: x-large;
 }
+
+.nav--link:hover{
+  text-decoration: underline;
+}
 #logo {
   width: 140px;
   background-color: #FFDE5B;
@@ -81,14 +85,15 @@ main{
   margin-left: 100px;
   margin-right: auto;
 }
-
-
+.restaurant-info{
+  font-size: 20px;
+}
 
 .restaurantCard{
   background: rgb(255,140,140);
   background: linear-gradient(360deg, rgba(255,140,140,1) 0%, rgba(254,197,197,1) 72%);
   border-radius: 10px;
-  padding: 20px;
+  padding: 15px;
   box-shadow: 5px 10px 8px #2c2c2c;
   width: 45vh;
   text-align: center;
@@ -99,6 +104,41 @@ main{
   background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
   border-radius: 10px;
   padding: 20px;
+}
+
+
+#rating{
+
+  width: 35px;
+  height: 30px;
+  border-radius: 10px;
+
+}
+
+#text-area{
+
+  border-radius: 10px;
+  text-align: 20px;
+
+
+}
+
+#date, #submit-review{
+  border-radius: 7px;
+  width: 100px;
+  height: 30px;
+}
+
+#submit-review{
+
+  justify-content: center;
+  margin-left: 105px;
+
+}
+
+#add-review-title{
+
+font-size: 50px;
 }
 
 #input-bar{

@@ -43,6 +43,7 @@ const ReviewModal = ({reviews,restaurant}) => {
             > 
                 <Box id="modal-box" sx={style}>
                     <h2 id="receipt-title">{restaurant.name}</h2>
+                    <hr/>
                 {reviews.map((review, id) => {
 
                 return (

@@ -15,7 +15,7 @@ const style = {
     boxShadow: 24,
     p: 4,
     borderRadius: 3,
-    font: "ReceiptFont",
+    fontFamily: "ReceiptFont",
     height: "50vh",
     overflowY: "scroll",
     

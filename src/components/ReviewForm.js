@@ -45,13 +45,16 @@ const ReviewForm = ({restaurant,setReviews,reviews}) => {
     
     return ( 
 
+        
         <form onSubmit={handleFormSubmit}>
-            <h2>Submit a review</h2>
+            <h2 id="add-review-title">Submit a review</h2>
+            <hr/>
             {/* <input
                 type="number"
                 placeholder="Enter rating"
                 
             /> */}
+            <h3> Rate out of 5:</h3>
             <select 
                 id="rating" 
                 name="rating"
@@ -66,20 +69,26 @@ const ReviewForm = ({restaurant,setReviews,reviews}) => {
                 
             </select>
 
-            <input
+            <h3>Let us know what you thought:</h3>
+            <textarea
+                id="text-area"
                 type="text"
+                rows="5"
+                cols="50"
                 placeholder="Enter review"
                 value={reviewText}
                 onChange={(e) => setReviewText(e.target.value)}
             />
 
+            <h3>Date:</h3>
             <input
+                id ="date"
                 type="date"
                 placeholder="Enter date"
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
-            />
-            <button type="submit">Submit</button>
+            />            
+            <button id="submit-review" type="submit">Submit</button>
         </form>
 
 
