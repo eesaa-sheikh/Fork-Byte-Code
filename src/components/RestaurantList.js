@@ -29,10 +29,10 @@ const RestaurantList = ({restaurants}) => {
         <div className="searchBar">
        
    
-        
+        <h2 id="search-bar-title">Find your next food heaven...</h2>
         <input type="text" 
         id="input-bar"
-        placeholder="Search"
+        placeholder="Search restaurant or cuisine"
         onChange={handleChange}/>
         </div>
 

@@ -50,7 +50,6 @@ main{
 .footer {
   background-color: #FFDE5B;
   padding-bottom: 0px;
-  /* height: 200px; */
   display: flex;
   justify-content: space-between;
   position:relative;
@@ -72,45 +71,41 @@ main{
   width: 7vh;
   height: 7vh;
   margin-right: 12vh;
-  
 }
 
 .restaurantContainer{
   display:grid;
   grid-template-columns: repeat(3,1fr);
-  margin: 20px;
+  margin-bottom: 10vh;
   grid-gap: 10vh;
+  margin-left: 100px;
+  margin-right: auto;
 }
 
 
 
 .restaurantCard{
-
   background: rgb(255,140,140);
   background: linear-gradient(360deg, rgba(255,140,140,1) 0%, rgba(254,197,197,1) 72%);
- border-radius: 10px;
- padding: 20px;
- /* border: 5px solid #FFBD59; */
-
- box-shadow: 5px 10px 8px #2c2c2c;
- width: 45vh;
-
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 10px 8px #2c2c2c;
+  width: 45vh;
+  text-align: center;
 }
-.restaurantCard:hover{
 
+.restaurantCard:hover{
   background-color: #FBAB7E;
   background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-  
- border-radius: 10px;
- padding: 20px;
-
+  border-radius: 10px;
+  padding: 20px;
 }
 
 #input-bar{
   border-radius: 10px;
   width: 400px;
   height: 100px;
-  font-size:30px;
+  font-size:28px;
   text-align: center; 
   outline: none;
 }
@@ -120,15 +115,26 @@ background-color: rgb(238, 238, 238);
 transform: scale(1.1);
 transition: 0.1s;
 box-shadow: 5px 10px 8px #2c2c2c;
-
 }
 
 .searchBar{
 padding-top: 25px;
 display:flex;
-justify-content: center;
+justify-content: space-between;
 padding-bottom: 50px;
+margin-right: 78.5vh;
+margin-left: 30vh;
 }
+
+#search-bar-title{
+  padding-top: 28px;
+  font-style: italic;
+  color:white;
+  text-shadow: #f7285c 1px -1px 15px;
+  
+}
+
+
 
 .carousel-caption{
   text-shadow: rgb(0, 0, 0) 1px 0 10px;
@@ -169,4 +175,8 @@ padding-bottom: 50px;
     transform:scale(1.2);
     transition: 0.1s
     
+}
+
+#receipt-title {
+  font-size: 5vh;
 }

@@ -42,7 +42,7 @@ const ReviewModal = ({reviews,restaurant}) => {
                 aria-describedby="modal-modal-description"
             > 
                 <Box id="modal-box" sx={style}>
-                    <h2>{restaurant.name}</h2>
+                    <h2 id="receipt-title">{restaurant.name}</h2>
                 {reviews.map((review, id) => {
 
                 return (
