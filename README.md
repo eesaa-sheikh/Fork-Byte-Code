@@ -20,7 +20,7 @@ Before starting our project, we defined our MVP as follows:
 - Basic CSS styling.
 
 
-#Extensions 
+##Extensions 
 
 We were able to implement the following extensions once our MVP was achieved:
 - Used MUI to create modals to show and add reviews.
@@ -31,16 +31,19 @@ We were able to implement the following extensions once our MVP was achieved:
 - Implemented media queries to adjust various elements accordingly.
 
 
-#How to use this app
+##How to use this app
 
 1. Fork and clone the back-end API: https://github.com/e-b-m/team_1_food_review
 2. In the terminal run the following command: `createdb food_review`
 3. Run the API 
 4. Fork and clone this repo.
 5. In the terminal run the following commands: 
- `npm install
-  npm install react-router-dom@6
-  npm install react-bootstrap bootstrap
-  npm install @emotion/react
-  npm install @mui/base
-  npm install @emotion/styled`
+ `npm install`
+  `npm install react-router-dom@6`
+  `npm install react-bootstrap bootstrap`
+ `npm install @emotion/react`
+  `npm install @mui/base`
+  `npm install @emotion/styled`
+  6. Last command I promise! 
+  `npm start`
+  ###TADA!
