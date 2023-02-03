@@ -1,14 +1,15 @@
 # Fork-Byte-Code Front-end Restaurant Food Review Site
 
 This website is dedicated to foodies wanting restaurant recommendations as well as posting reviews for them.
+</br>
+</br>
 
-## Project Outline 
+## Project Outline 🖊️
 
 We utilised a restaurant review API for our backend to create a react app. We also imported MUI to create a modal review feature, as well as using the bootstap framework for our carousel.
 </br>
 </br>
-</br>
-## Tech Stack
+## Tech Stack 👩‍💻
 <img src= "src/tech-stack-logos/css.png" alt="CSS logo" width="100px" height="auto">
 <img src= "src/tech-stack-logos/bootstrap.png" alt="bootstap logo" width="100px" height="auto"/>
 <img src= "src/tech-stack-logos/git.png" alt="git logo" width="100px" height="auto"/>
@@ -16,6 +17,8 @@ We utilised a restaurant review API for our backend to create a react app. We al
 <img src= "src/tech-stack-logos/js.png" alt="JS logo" width="100px" height="auto"/>
 <img src= "src/tech-stack-logos/MUI.png" alt="mui logo" width="100px" height="auto"/>
 <img src= "src/tech-stack-logos/postman.png" alt="postman logo" width="100px" height="auto"/>
+</br>
+</br>
 
 ## MVP 
 
@@ -40,7 +43,7 @@ We were able to implement the following extensions once our MVP was achieved:
 - Implemented media queries to adjust various elements accordingly.
 
 
-## How to use this app
+## How to use this app❓
 
 1. Fork and clone the back-end API: https://github.com/e-b-m/team_1_food_review
 2. In the terminal run the following command: `createdb food_review`
@@ -71,4 +74,10 @@ Whilst we are proud of the app we produced in the short space of time we had. Th
 1. User functionality - right now the user of our app doesn't need to login to be able to add reviews. But in future we would like this feature not only so that users can post reviews but also save restaurants, create a favourites list etc. 
 2. Adding maps to each restaurant - Currently the backend has no address associated to each restaurant, had we more time we would have found a front-end solution to allow each restaurant to have an associated address to allow users to use maps to find directions.
 3. Adding images to restaurants - we would have liked each restaurant to have an image, given that the backend has no image associated with each restaurant we would like to use another API that allows us to have this feature.
-4.  
+4. Adding restaurant - whilst you can add reviews, you can't add new restaurants so this is a feature we would like to include.
+
+## Team 💻
+
+**Berna Yasar**: [Byasar3](https://github.com/Byasar3)
+**Eesaa Sheikh**: [eesaa-sheikh](https://github.com/eesaa-sheikh)
+**Nadia Djeridi**: [nadia-dj98](https://github.com/nadia-dj98)
